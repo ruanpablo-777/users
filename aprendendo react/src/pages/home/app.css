@@ -1,0 +1,138 @@
+body {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.74), rgba(223, 222, 222, 0.514));
+    width: 99vw;
+    height: 97.4vh;
+    background-size: 200% 200%;
+
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+div.container {
+    min-width: 300px;
+
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+form {
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    max-width: 50%;
+    width: 400px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.192);
+    color: white;
+    align-items: center;
+
+    & h1 {
+        width: 100px;
+        font-size: 18px;
+        display: inline-block;
+        background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255));
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 0;
+        animation: right 1.5s infinite;
+        text-align: center;
+    }
+}
+
+@keyframes right {
+    to {
+
+        color: white;
+        transition: linear 2s;
+    }
+}
+
+div.users {
+    margin: 10px;
+    display: flex;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.192);
+    width: 200px;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+
+}
+
+#loading {
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    border-top-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    animation: rodar 1.5s 1.5s infinite;
+
+
+}
+
+@keyframes rodar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+img:hover {
+    color: blue;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+
+
+}
+
+#cadastrar {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+    border-radius: 50px;
+}
+
+#cadastrar:active {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+input {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.24);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.349);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#name {
+    text-transform: capitalize;
+}
+
+& ::placeholder {
+    color: rgba(255, 255, 255, 0.315);
+}
